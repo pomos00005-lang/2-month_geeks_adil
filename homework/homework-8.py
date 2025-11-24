@@ -31,7 +31,7 @@ def update_book_name(conn, book_id, new_name):
     conn.commit()
 
 if __name__ == '__main__':
-    conn = sqlite3.connect('books.db')
+    conn = sqlite3.connect('../books.db')
     create_table(conn)
 
     insert_book(conn, 'Война и мир', 'Лев Толстой', 1869, 'Роман', 1225, 10)
